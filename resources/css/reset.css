@@ -1,0 +1,103 @@
+/* Ensures that all elements look the same in different browsers.   */
+/* Removes unwanted default styles.                                 */
+
+
+/* Removes default margins and paddings */
+/* Makes sizing simpler */
+*
+, *::before
+, *::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;    /* Ensure smooth scrolling for browsers that support it */
+
+    font-size: 16px;            /* Keeps typography consistent and scalable */
+
+    text-rendering: optimizeSpeed;            
+    -webkit-font-smoothing: antialiased;    /* Sharper text */
+    -moz-osx-font-smoothing: grayscale;
+
+    text-size-adjust: 100%;             /* Improves readability */
+    -webkit-text-size-adjust: 100%;     /* Safari, Chrome */
+    -moz-text-size-adjust: 100%;        /* Firefox */
+    -ms-text-size-adjust: 100%;         /* IE */
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* Responsive images and media */
+iframe
+, img
+, picture
+, svg
+, video {
+    max-width: 100%;
+    height: auto;       /* automatically scale proportionally with the width */
+    display: block;     /* display as block level rather than inline-block (default state) */
+                        /* this will prevent images from attempting to align with other content on the page */
+}
+
+/* Improved heading in supported browsers */
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+/* Prevent text overflow */
+pre, code {
+    overflow-x: auto;
+}
+
+/* Improve readability with max-width on paragraphs and lists */
+/* prevent orphans in supported browsers */
+p, li {
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+}
+
+/* Remove list styles */
+ol, ul {
+    list-style: none;
+}
+
+/* Ensures tables are properly spaced */
+table {
+    width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Remove default link styling */
+a {
+    text-decoration: none;
+}
+
+/* Button-specific fixes */
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Reset form elements */
+input
+, textarea
+, button
+, select {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* Remove default fieldset styles */
+fieldset {
+    border: none;
+}

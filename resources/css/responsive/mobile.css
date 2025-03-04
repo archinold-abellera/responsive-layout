@@ -1,0 +1,13 @@
+@media only screen and (max-width: 425px) {
+
+    /* ********** Page Layout ********** */
+
+    .container {
+        display: grid;
+        grid-template-rows: 1fr var(--nav-height);
+        grid-template-areas: 
+            'main'
+            'nav';
+    }
+
+}

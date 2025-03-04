@@ -1,0 +1,54 @@
+@media only screen and (max-width: 768px) {
+    
+    /* ********** Page Layout ********** */
+
+    .container {
+        display: grid;
+        grid-template-rows: 1fr var(--nav-height);
+        grid-template-areas: 
+            'main'
+            'nav';
+    }
+
+
+    /* ********** <header> ********** */
+
+    .brand-logo {
+        width: var(--brand-logo-container-width);
+        max-width: var(--brand-logo-container-width);
+    }
+
+    #navbar-toggle {
+        display: none;
+    }
+
+    /* ********** <nav> ********** */
+
+    #navbar {
+        width: 100%;
+
+        overflow-x: auto;
+        
+        transition: none;
+    }
+
+    .navbar-menu {
+        display: flex;
+    }
+
+    .navbar-menu-link {
+        width: var(--navbar-menu-link-icon-width);
+        height: 100%;
+
+        margin: 0 1.125rem;
+        border: 0;
+        padding: 0;
+
+        justify-content: center;
+    }
+
+    .navbar-menu-link span {
+        display: none;
+    }
+
+}
